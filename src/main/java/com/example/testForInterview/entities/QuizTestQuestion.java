@@ -1,10 +1,12 @@
-package com.example.testForInterview.entity;
+package com.example.testForInterview.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+@AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
@@ -23,4 +25,6 @@ public class QuizTestQuestion {
     @JoinColumn(name="candidate_id")
     Candidate candidate;
 
+    @Column(name = "response")
+    Integer response ;
 }

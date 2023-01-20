@@ -1,4 +1,4 @@
-package com.example.testForInterview.entity;
+package com.example.testForInterview.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,5 +17,9 @@ public class Quiz {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "quiz_id", nullable = false)
     private Long id;
-
+    private String Question ;
+    private String firstChoice ;
+    private String secondChoice ;
+    private String thirdChoice ;
+    private Integer response ;
 }
